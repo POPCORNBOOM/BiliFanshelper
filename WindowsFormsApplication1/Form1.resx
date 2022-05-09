@@ -760,7 +760,13 @@
     <value>签名</value>
   </data>
   <data name="Column3.Width" type="System.Int32, mscorlib">
-    <value>535</value>
+    <value>435</value>
+  </data>
+  <metadata name="face.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="face.HeaderText" xml:space="preserve">
+    <value>头像链接</value>
   </data>
   <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -861,6 +867,42 @@
   <data name="&gt;&gt;pagetips.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btn_savefaces.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btn_savefaces.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_savefaces.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="btn_savefaces.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_savefaces.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 63</value>
+  </data>
+  <data name="btn_savefaces.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 47</value>
+  </data>
+  <data name="btn_savefaces.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btn_savefaces.Text" xml:space="preserve">
+    <value>导出头像</value>
+  </data>
+  <data name="&gt;&gt;btn_savefaces.Name" xml:space="preserve">
+    <value>btn_savefaces</value>
+  </data>
+  <data name="&gt;&gt;btn_savefaces.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_savefaces.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btn_savefaces.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btnExport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -895,7 +937,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;btnExport.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="sesbox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -931,7 +973,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;sesbox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="uidbox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -967,7 +1009,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;uidbox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textBoxUID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -994,7 +1036,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBoxUID.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -1030,7 +1072,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="textBoxData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1057,7 +1099,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;textBoxData.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 310</value>
@@ -1280,6 +1322,12 @@
     <value>Column3</value>
   </data>
   <data name="&gt;&gt;Column3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;face.Name" xml:space="preserve">
+    <value>face</value>
+  </data>
+  <data name="&gt;&gt;face.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column4.Name" xml:space="preserve">

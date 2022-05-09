@@ -103,7 +103,8 @@ namespace WindowsFormsApplication1
                         dgv.Rows[row].Cells[1].Value = fan.uname;
                         dgv.Rows[row].Cells[2].Value = fan.mid;
                         dgv.Rows[row].Cells[3].Value = fan.sign.Replace("\n", "");
-                        dgv.Rows[row].Cells[4].Value = state[fan.attribute];
+                        dgv.Rows[row].Cells[4].Value = fan.face;
+                        dgv.Rows[row].Cells[5].Value = state[fan.attribute];
 
                         lbl.Text = "正在获取第 " + ( row + 1 ) + " 位/第 " + page + " 页";
                         lbl.Refresh();

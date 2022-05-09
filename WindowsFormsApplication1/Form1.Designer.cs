@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainform));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,14 +48,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.FansDataView = new System.Windows.Forms.DataGridView();
-            this.序号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pagetips = new System.Windows.Forms.Label();
@@ -65,9 +63,13 @@
             this.textBoxData = new System.Windows.Forms.TextBox();
             this.tabcontroller = new System.Windows.Forms.TabControl();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.序号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.face = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_savefaces = new System.Windows.Forms.Button();
             this.tabPage3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,12 +104,24 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label16.Name = "label16";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
+            // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label11.Name = "label11";
             this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
             // 
             // label10
             // 
@@ -185,6 +199,11 @@
             this.label13.Name = "label13";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
@@ -220,6 +239,7 @@
             this.Column1,
             this.Column2,
             this.Column3,
+            this.face,
             this.Column4});
             this.FansDataView.Cursor = System.Windows.Forms.Cursors.Default;
             this.FansDataView.GridColor = System.Drawing.Color.DarkSeaGreen;
@@ -233,46 +253,12 @@
             this.FansDataView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.FansDataView_CellMouseDoubleClick);
             this.FansDataView.ColumnWidthChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.FansDataView_ColumnWidthChanged);
             // 
-            // 序号
-            // 
-            resources.ApplyResources(this.序号, "序号");
-            this.序号.Name = "序号";
-            this.序号.ReadOnly = true;
-            this.序号.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column1
-            // 
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column2
-            // 
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column3
-            // 
-            resources.ApplyResources(this.Column3, "Column3");
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column4
-            // 
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pagetips);
+            this.panel1.Controls.Add(this.btn_savefaces);
             this.panel1.Controls.Add(this.btnExport);
             this.panel1.Controls.Add(this.sesbox);
             this.panel1.Controls.Add(this.uidbox);
@@ -357,22 +343,55 @@
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
             // 
-            // label15
+            // 序号
             // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
+            resources.ApplyResources(this.序号, "序号");
+            this.序号.Name = "序号";
+            this.序号.ReadOnly = true;
+            this.序号.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // label16
+            // Column1
             // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Name = "label16";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // label17
+            // Column2
             // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.Name = "label17";
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column3
+            // 
+            resources.ApplyResources(this.Column3, "Column3");
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // face
+            // 
+            resources.ApplyResources(this.face, "face");
+            this.face.Name = "face";
+            this.face.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            resources.ApplyResources(this.Column4, "Column4");
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // btn_savefaces
+            // 
+            resources.ApplyResources(this.btn_savefaces, "btn_savefaces");
+            this.btn_savefaces.BackgroundImage = global::BFM.Properties.Resources.Background_white240;
+            this.btn_savefaces.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_savefaces.Name = "btn_savefaces";
+            this.btn_savefaces.UseVisualStyleBackColor = true;
+            this.btn_savefaces.Click += new System.EventHandler(this.btn_savefaces_Click);
             // 
             // Mainform
             // 
@@ -431,15 +450,17 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxData;
         private System.Windows.Forms.TabControl tabcontroller;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn face;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Button btn_savefaces;
     }
 }
 

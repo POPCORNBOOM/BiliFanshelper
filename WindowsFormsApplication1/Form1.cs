@@ -6,7 +6,9 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -275,6 +277,64 @@ namespace WindowsFormsApplication1
         private void label16_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/SocialSisterYi/bilibili-API-collect");
+
+        }
+
+        private void btn_savefaces_Click(object sender, EventArgs e)
+        {
+            Thread t1 = new Thread(downpicthread);
+            t1.Start();
+            MessageBox.Show("开始下载,将保存到"+ string.Format(@"C:\Users\Public\Pictures\{0}\", DateTime.Now.ToString("yyyy-MM-dd")));
+
+        }
+
+        public void downpicthread()
+        {
+            string erroruname = "获取失败:";
+            foreach (DataGridViewRow row in FansDataView.Rows)
+            {
+                try
+                {
+                    if(row.Cells[4].Value!=null)
+                        downloadfaces(row.Cells[4].Value.ToString(), row.Cells[1].Value.ToString());
+                    else
+                    {
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    erroruname += row.Cells[1].Value.ToString() + ",";
+                }
+            }
+            MessageBox.Show(erroruname);
+        }
+
+
+        public void downloadfaces(string url,string name)
+        {
+            WebRequest imgRequest = WebRequest.Create(url);
+            HttpWebResponse res;
+            try
+            {
+                res = (HttpWebResponse)imgRequest.GetResponse();
+            }
+            catch (WebException ex)
+            {
+                res = (HttpWebResponse)ex.Response;
+            }
+            if (res.StatusCode.ToString() == "OK")
+            {
+                System.Drawing.Image downImage = System.Drawing.Image.FromStream(imgRequest.GetResponse().GetResponseStream());
+                string deerory = string.Format(@"C:\Users\Public\Pictures\{0}\", DateTime.Now.ToString("yyyy-MM-dd"));
+                string fileName = string.Format("{0}.png", name);
+                if (!System.IO.Directory.Exists(deerory))
+                {
+                    System.IO.Directory.CreateDirectory(deerory);
+                }
+                downImage.Save(deerory + fileName);
+                downImage.Dispose();
+            }
 
         }
     }

@@ -1,1 +1,14 @@
 E:\FansHelper\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\BilibiliFansManager.exe.config
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\bin\Debug\BilibiliFansManager.exe.config
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\bin\Debug\BilibiliFansManager.exe
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\bin\Debug\BilibiliFansManager.pdb
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Mainform.resources
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.帮助SESSDATA.resources
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BFM.Properties.Resources.resources
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.csproj.CopyComplete
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.exe
+C:\Users\Administrator\Downloads\BiliFanshelper-master\BiliFanshelper-master\WindowsFormsApplication1\obj\Debug\BilibiliFansManager.pdb
